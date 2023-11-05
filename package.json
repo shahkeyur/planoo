@@ -1,5 +1,5 @@
 {
-  "name": "planoo",
+  "name": "Planno",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "@nextui-org/react": "^2.2.2",
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.4",

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function PlanooLogo() {
+function PlannoLogo() {
   return (
     <Link href="/">
       <Image src="/logo.png" alt="Logo" width={160} height={160} />
@@ -9,4 +9,4 @@ function PlanooLogo() {
   );
 }
 
-export default PlanooLogo;
+export default PlannoLogo;

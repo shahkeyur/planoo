@@ -6,7 +6,7 @@ import {
   NavbarItem,
 } from "@nextui-org/navbar";
 import Link from "next/link";
-import PlanooLogo from "../PlanooLogo";
+import PlannoLogo from "../PlannoLogo";
 
 const links = [
   {
@@ -27,7 +27,7 @@ function Nav() {
   return (
     <Navbar className="shadow-md" maxWidth="full">
       <NavbarBrand>
-        <PlanooLogo />
+        <PlannoLogo />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
         {links.map((link) => (

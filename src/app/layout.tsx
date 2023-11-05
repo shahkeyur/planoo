@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import { Providers } from "@/components/Providers";
 import type { Metadata } from "next";
@@ -11,7 +11,7 @@ const inter = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Planoo",
+  title: "Planno",
 };
 
 export default function RootLayout({
