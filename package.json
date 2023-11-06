@@ -1,7 +1,16 @@
 {
-  "name": "Planno",
+  "name": "planno",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "nextjs14",
+    "app router",
+    "tailwindcss",
+    "nextui",
+    "next-auth",
+    "firebase authentication",
+    "react"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
