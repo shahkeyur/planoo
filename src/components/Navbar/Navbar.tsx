@@ -31,7 +31,7 @@ function Nav() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
         {links.map((link) => (
-          <NavbarItem key={link.name}>
+          <NavbarItem className="hover:underline" key={link.name}>
             <Link href={link.href}>{link.name}</Link>
           </NavbarItem>
         ))}

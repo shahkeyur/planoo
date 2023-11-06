@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <div>
-      <div className="grid grid-cols-3 bg-gray-200">
+      <div className="lg:grid lg:grid-cols-3 bg-gray-200">
         <div className="col-span-2 flex flex-col mx-auto py-8">
           <h1 className="text-7xl font-medium text-gray-400">
             Get ready to

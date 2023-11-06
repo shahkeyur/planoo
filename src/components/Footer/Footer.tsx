@@ -2,6 +2,7 @@ import { Button } from "@nextui-org/react";
 import PlannoLogo from "../PlannoLogo";
 import FooterTitle from "./FooterTitle";
 import FooterLink from "./FooterLink";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -69,25 +70,36 @@ function Footer() {
               isIconOnly
               className="rounded-full bg-white outline-gray-200"
             >
-              F
+              <Image
+                src="/facebook.png"
+                alt="facebook"
+                width={35}
+                height={35}
+              />
             </Button>
             <Button
               isIconOnly
               className="rounded-full bg-white outline-gray-200"
             >
-              F
+              <Image
+                src="/instagram.svg"
+                alt="instagram"
+                width={25}
+                height={25}
+              />
             </Button>
             <Button
               isIconOnly
               className="rounded-full bg-white outline-gray-200"
             >
-              F
+              <Image src="/twitter.svg" alt="twitter" width={25} height={25} />
             </Button>
             <Button
               isIconOnly
               className="rounded-full bg-white outline-gray-200"
             >
-              F
+              {" "}
+              <Image src="/linkedin.svg" alt="linkedin" width={25} height={25} />
             </Button>
           </div>
 
