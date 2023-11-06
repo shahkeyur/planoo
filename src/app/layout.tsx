@@ -4,6 +4,8 @@ import { Providers } from "@/components/Providers";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { getServerSession } from "next-auth";
+import { authOptions } from "./api/auth/[...nextauth]/route";
 
 const inter = Roboto({
   subsets: ["latin"],
@@ -11,19 +13,27 @@ const inter = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Planno",
+  title: {
+    template: "%s | Planno",
+    default: "PLanno",
+  },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  modal,
 }: {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }) {
+  const session = await getServerSession(authOptions);
+
   return (
     <html lang="en" className="light">
       <body className={inter.className}>
-        <Providers>
+        <Providers session={session}>
           <Navbar />
+          {modal}
           <main className="min-h-screen container mx-auto">{children}</main>
           <Footer />
         </Providers>

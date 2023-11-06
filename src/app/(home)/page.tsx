@@ -1,7 +1,7 @@
 "use client";
 
 import FAQ from "@/components/FAQ/FAQ";
-import { Button } from "@nextui-org/react";
+import { Button, Input } from "@nextui-org/react";
 import Image from "next/image";
 
 function Home() {
@@ -28,17 +28,18 @@ function Home() {
           </h1>
           <form
             onSubmit={handleRegister}
-            className="rounded-full flex bg-white mt-8"
+            className="rounded-full flex bg-white mt-8 max-w-md"
           >
-            <input
+            <Input
               placeholder="Enter your email"
-              className="rounded-full text-lg w-full"
+              className="rounded-r-none w-full"
+              type="email"
             />
             <Button
               type="submit"
               color="secondary"
               size="lg"
-              className="rounded-full ml-2 w-40"
+              className="h-full w-40 rounded-l-none"
             >
               Register
             </Button>

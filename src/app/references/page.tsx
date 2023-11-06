@@ -47,6 +47,15 @@ function References() {
           Icons8
         </a>
       </p>
+      <p>
+        <a target="_blank" href="https://icons8.com/icon/17949/google">
+          Google
+        </a>{" "}
+        icon by{" "}
+        <a target="_blank" href="https://icons8.com">
+          Icons8
+        </a>
+      </p>
     </div>
   );
 }
